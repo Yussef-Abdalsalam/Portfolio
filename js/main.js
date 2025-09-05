@@ -209,7 +209,7 @@ function validatePhone() {
 }
 
 function validateMessage() {
-  let regexMessage = /^([A-z ]{3,200})$/;
+  let regexMessage = /^([A-Za-z\u0600-\u06FF ]{3,200})$/;
   if (regexMessage.test(userMessageInput.value) == true) {
     document.querySelector(".check-mess").classList.remove("d-none");
     document.querySelector(".times-mess").classList.add("d-none");
